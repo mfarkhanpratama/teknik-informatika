@@ -36,7 +36,7 @@ function Home() {
           <div className="flex-col items-center justify-center">
             <div className="flex items-center justify-center">
               <img
-                src="/asset/images/logoTi.PNG"
+                src="/asset/images/logoti.png"
                 alt="logo"
                 className="w-[250px] h-auto"
               />
