@@ -5,6 +5,8 @@ function visiMisi() {
   return (
     <div>
       <SubLatar judul={"visi dan misi"} />
+
+      <section></section>
     </div>
   );
 }
