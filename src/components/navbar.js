@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
 const navigation = [
@@ -14,13 +14,12 @@ const navigation = [
     href: "/profil",
     current: false,
     list: [
-      { linkName: "Sejarah", href: "/" },
-      { linkName: "Visi dan Misi", href: "/" },
-      { linkName: "Tujuan", href: "/" },
-      { linkName: "Sasaran", href: "/" },
-      { linkName: "Strategi", href: "/" },
-      { linkName: "Dosen", href: "/" },
-      { linkName: "Tenaga Pendidikan", href: "/" },
+      { linkName: "Sejarah", href: "/profil/sejarah" },
+      { linkName: "Visi dan Misi", href: "/profil/visi-Misi" },
+      { linkName: "Tujuan", href: "/profil/Tujuan" },
+      { linkName: "Sasaran", href: "/profil/Sasaran" },
+      { linkName: "Strategi", href: "/profil/Strategi" },
+      { linkName: "People", href: "/profil/people" },
     ],
   },
   {
@@ -28,9 +27,9 @@ const navigation = [
     href: "/akademik",
     current: false,
     list: [
-      { linkName: "kurikulum", href: "/" },
-      { linkName: "Jadwal Kuliah", href: "/" },
-      { linkName: "Kalender Akademik", href: "/" },
+      { linkName: "Kurikulum", href: "/akademik/Kurikulum" },
+      { linkName: "Jadwal Kuliah", href: "/akademik/Jadwal-Kuliah" },
+      { linkName: "Kalender Akademik", href: "/akademik/Kalender-Akademik" },
     ],
   },
   {
@@ -38,24 +37,24 @@ const navigation = [
     href: "/galeri",
     current: false,
     list: [
-      { linkName: "Foto", href: "/" },
-      { linkName: "Video", href: "/" },
-      { linkName: "Virtual Tour", href: "/" },
+      { linkName: "Foto", href: "/galeri/foto" },
+      { linkName: "Video", href: "/galeri/video" },
+      { linkName: "Virtual Tour", href: "/galeri/virtual-tour" },
     ],
   },
   {
     name: "Kemahasiswaan",
-    href: "/",
+    href: "/kemahasiswaan",
     current: false,
   },
   {
     name: "Layanan",
-    href: "/",
+    href: "/layanan",
     current: false,
   },
   {
     name: "Kontak",
-    href: "/",
+    href: "/kontak",
     current: false,
   },
 ];
@@ -95,7 +94,13 @@ export default function navbar() {
                         <div>
                           <Menu.Button className="flex items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <div className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
-                              {item.name}
+                              {item.list && item.list.length > 0 ? (
+                                <Menu.Button className="flex items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                  <div>{item.name}</div>
+                                </Menu.Button>
+                              ) : (
+                                <Link to={item.href}>{item.name}</Link>
+                              )}
                             </div>
                           </Menu.Button>
                         </div>
@@ -113,14 +118,14 @@ export default function navbar() {
                               {item.list.map((i) => (
                                 <Menu.Item key={i.linkName}>
                                   {({ active }) => (
-                                    <a
-                                      href={i.href}
-                                      className={`${
-                                        active ? "bg-gray-100" : ""
-                                      } block px-4 py-2 text-sm text-gray-700`}
+                                    <Link
+                                      exact
+                                      to={i.href}
+                                      activeClassName="bg-gray-100"
+                                      className="block px-4 py-2 text-sm text-gray-700"
                                     >
                                       {i.linkName}
-                                    </a>
+                                    </Link>
                                   )}
                                 </Menu.Item>
                               ))}

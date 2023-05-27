@@ -1,12 +1,12 @@
 import React from "react";
 import SubLatar from "../../components/sublatar";
 
-function sejarah() {
+function Foto() {
   return (
     <div>
-      <SubLatar judul={"Sejarah"} />
+      <SubLatar judul={"Foto"} />
     </div>
   );
 }
 
-export default sejarah;
+export default Foto;

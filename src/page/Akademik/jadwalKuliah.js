@@ -1,12 +1,12 @@
 import React from "react";
 import SubLatar from "../../components/sublatar";
 
-function sejarah() {
+function JadwalKuliah() {
   return (
     <div>
-      <SubLatar judul={"Sejarah"} />
+      <SubLatar judul={"Jadwal Kuliah"} />
     </div>
   );
 }
 
-export default sejarah;
+export default JadwalKuliah;

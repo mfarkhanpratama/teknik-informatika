@@ -1,12 +1,12 @@
 import React from "react";
 import SubLatar from "../../components/sublatar";
 
-function sejarah() {
+function VirtualTour() {
   return (
     <div>
-      <SubLatar judul={"Sejarah"} />
+      <SubLatar judul={"Virtual Tour"} />
     </div>
   );
 }
 
-export default sejarah;
+export default VirtualTour;

@@ -2,6 +2,7 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import CardCount from "../components/cardCount";
 
 import React from "react";
+import RevealOnScroll from "../components/effectScroll";
 
 const images = [
   "/asset/images/kemitraan/1.png",
@@ -145,7 +146,9 @@ function Home() {
         ))}
       </section>
 
-      <section></section>
+      <section>
+        <RevealOnScroll />
+      </section>
     </>
   );
 }
