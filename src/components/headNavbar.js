@@ -32,7 +32,7 @@ const headNavbar = () => {
       <div className="bg-gray-800 h-[80px] flex justify-between items-center">
         <div className="flex gap-3 justify-between items-center">
           <img
-            src="/asset/images/LOGO-UR-TERBARU.PNG"
+            src="/asset/images/logoUnri.png"
             alt="logo unri"
             className="h-16 ml-5 "
           />

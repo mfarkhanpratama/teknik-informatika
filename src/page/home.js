@@ -28,7 +28,7 @@ function Home() {
       <div className="relative">
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <img
-          src="/asset/images/latar-unri.png"
+          src="/asset/images/latarUnri.png"
           alt="test"
           className="w-full h-auto"
         />
@@ -36,7 +36,7 @@ function Home() {
           <div className="flex-col items-center justify-center">
             <div className="flex items-center justify-center">
               <img
-                src="/asset/images/logo-ti.PNG"
+                src="/asset/images/logoTi.PNG"
                 alt="logo"
                 className="w-[250px] h-auto"
               />
