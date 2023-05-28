@@ -147,7 +147,7 @@ function Home() {
           backgroundImage="/asset/images/rpl.jpg"
           profileImage="/asset/images/people/manto.png"
           quote="I’m an optimist about our ability to cope with climate change. As I’ve moved forward in my career, what I see are more and more opportunities to address the challenge, to put in place solutions that lead to better lives for individuals and communities."
-          person="manto"
+          person="Dr. Dahliyusmanto S.Kom., M.Sc."
           job="dosen"
         />
       </section>
