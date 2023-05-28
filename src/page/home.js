@@ -2,7 +2,7 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import CardCount from "../components/cardCount";
 
 import React from "react";
-import RevealOnScroll from "../components/effectScroll";
+import QuoteSection from "../components/quotesSection";
 
 const images = [
   "/asset/images/kemitraan/1.png",
@@ -32,37 +32,37 @@ function Home() {
           alt="test"
           className="w-full h-auto"
         />
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center ">
           <div className="flex-col items-center justify-center">
             <div className="flex items-center justify-center">
               <img
                 src="/asset/images/logoTi.png
                 "
                 alt="logo"
-                className="w-[250px] h-auto"
+                className="w-12 md:w-[250px] h-auto mr-2"
               />
               <div className=" flex-col items-start justify-center">
-                <h2 className="text-2xl font-medium text-orange-600 mb-8 tracking-[.75em]">
+                <h2 className="text-[11px] md:text-2xl font-medium text-orange-600 md:mb-8 tracking-[.30em] md:tracking-[.75em]">
                   PROGRAM STUDI S1
                 </h2>
-                <h2 className="text-6xl font-bold text-white mb-8 tracking-[.20em]">
+                <h2 className="text-[16px] md:text-6xl font-bold text-white md:mb-8 tracking-[.10em] md:tracking-[.20em]">
                   TEKNIK INFORMATIKA
                 </h2>
-                <h2 className="text-5xl font-semibold text-white font-serif">
+                <h2 className="text-md md:text-5xl font-medium text-white font-serif">
                   Universitas Riau
                 </h2>
               </div>
             </div>
 
-            <div className="flex gap-10 justify-center items-center mt-8">
+            <div className="flex gap-3 md:gap-10 justify-center items-center mt-8">
               <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900  group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-opacity-0 w-[250px] h-[50px] flex justify-center items-center text-xl">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-opacity-0 w-[100px] h-[20px] md:w-[250px] md:h-[50px] flex justify-center items-center text-md md:text-xl">
                   Profil
                 </span>
               </button>
 
               <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900  group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-opacity-0 w-[250px] h-[50px] flex justify-center items-center text-xl">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 group-hover:bg-opacity-0 w-[100px] h-[20px] md:w-[250px] md:h-[50px] flex justify-center items-center text-md md:text-xl">
                   Kurikulum
                   <ArrowLongRightIcon
                     strokeWidth={2}
@@ -77,13 +77,13 @@ function Home() {
 
       {/* content */}
 
-      <section class="h-[650px] flex items-center justify-center">
+      <section class="h-auto flex items-center justify-center py-12 md:py-36">
         <div class=" w-2/3 mx-auto text-center space-y-12">
-          <h1 class="text-[40px] font-bold">
+          <h1 class="md:text-[40px] font-bold text-[20px] ">
             A purposeful informatics engineering study program in University of
             Riau
           </h1>
-          <p class="text-[30px] font-normal">
+          <p class="md:text-[30px] text-[15px] font-normal">
             Stanford was founded almost 150 years ago on a bedrock of societal
             purpose. Our mission is to contribute to the world by educating
             students for lives of leadership and purposeful contribution;
@@ -95,28 +95,28 @@ function Home() {
           </button>
         </div>
       </section>
-      <section class="h-[850px] flex items-center justify-center bg-slate-700">
+      <section class="h-auto flex items-center justify-center md:py-36  py-12 bg-slate-700">
         <div class=" w-2/3 mx-auto text-center space-y-12">
-          <h1 class="text-[40px] font-bold text-white">
+          <h1 class="md:text-[40px]  text-[20px] font-bold text-white">
             Our interdisciplinary curriculum offers a rare combination of degree
             programs in
           </h1>
-          <p class="text-[30px] font-normal text-white">
+          <p class="md:text-[30px] text-[15px] font-normal text-white">
             LIBERAL ARTS AND ENGINEERING
           </p>
-          <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 " />
+          <hr class="h-[2px] mx-auto  bg-gray-100 border-0 rounded md:my-10 " />
           <p className="text-white">
             Build your future with 51 majors and 41 minors.
           </p>
           <div
-            className="flex justify-center gap-9
+            className="flex justify-center md:gap-9 gap-3
            items-center"
           >
             {konsentrasi.map((item) => (
               <div className="relative">
                 <div
                   className="rounded-full overflow-hidden transition-all duration-150
-              cursor-pointer filter grayscale hover:grayscale-0 h-60 w-60"
+              cursor-pointer filter grayscale hover:grayscale-0 md:h-60 md:w-60 w-24 h-24"
                 >
                   <img
                     src={item.href}
@@ -135,21 +135,29 @@ function Home() {
         </div>
       </section>
 
-      <section className="h-[345px] flex items-center justify-center bg-white">
-        <CardCount target={10} />
-        <CardCount target={10} />
-        <CardCount target={10} />
-      </section>
-
-      <section className="h-[345px] flex items-center justify-center bg-white">
-        {images.map((item) => (
-          <img src={item} alt={item} className="h-24" />
-        ))}
+      <section className="h-auto py-6 flex items-start justify-center bg-white gap-2 md:gap-4 my-6 md:my-24">
+        <CardCount target={40} context="Mahasiswa Aktif" />
+        <CardCount target={40} context="Dosen Pengampu" />
+        <CardCount target={40} context="Alumni" />
+        <CardCount target={40} context="Mata Kuliah" />
       </section>
 
       <section>
-        <RevealOnScroll />
+        <QuoteSection
+          backgroundImage="/asset/images/rpl.jpg"
+          profileImage="/asset/images/people/manto.png"
+          quote="I’m an optimist about our ability to cope with climate change. As I’ve moved forward in my career, what I see are more and more opportunities to address the challenge, to put in place solutions that lead to better lives for individuals and communities."
+          person="manto"
+          job="dosen"
+        />
       </section>
+
+      <section className="h-auto md:flex md:items-center md:justify-center grid grid-cols-4 gap-2 py-11 md:py-28 bg-white">
+        {images.map((item) => (
+          <img src={item} alt={item} className="md:h-28 h-8" />
+        ))}
+      </section>
+      <img src="/asset/images/latarfooter.jpg" alt="" />
     </>
   );
 }

@@ -17,6 +17,9 @@ import VirtualTour from "./page/Galeri/virtual";
 import Kurikulum from "./page/Akademik/kurikulum";
 import JadwalKuliah from "./page/Akademik/jadwalKuliah";
 import KalenderAkademik from "./page/Akademik/kalenderAkademik";
+import Akreditasi from "./page/Profil/Akreditasi";
+import Kontak from "./page/kontak";
+import Berita from "./page/berita";
 
 function App() {
   return (
@@ -34,6 +37,7 @@ function App() {
           <Route path="/profil/Sasaran" element={<Sasaran />} />
           <Route path="/profil/people" element={<People />} />
           <Route path="/profil/Tujuan" element={<Tujuan />} />
+          <Route path="/profil/Akreditasi" element={<Akreditasi />} />
 
           {/* AKADEMIK PAGE */}
           <Route path="/akademik/Kurikulum" element={<Kurikulum />} />
@@ -47,6 +51,12 @@ function App() {
           <Route path="/galeri/foto" element={<Foto />} />
           <Route path="/galeri/video" element={<Video />} />
           <Route path="/galeri/virtual-tour" element={<VirtualTour />} />
+
+          {/* KONTAK PAGE */}
+          <Route path="/Kontak" element={<Kontak />} />
+
+          {/* NEWS PAGE */}
+          <Route path="/berita" element={<Berita />} />
         </Routes>
       </div>
       <Footer />

@@ -1,24 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const smallNavbar = [
   { name: "UNRI Official", href: "/" },
   { name: "Webmail UNRI", href: "/" },
-  { name: "UNRI News", href: "/" },
+  { name: "UNRI News", href: "/berita" },
   { name: "BITS", href: "/" },
 ];
 
 const headNavbar = () => {
   return (
-    <>
+    <div className="z-20">
       <div className="bg-[#000D18] h-8 w-full">
-        <div className="flex space-x-4 ml-3 items-center p-1">
+        <div className="flex space-x-4 ml-3 items-center sm:p-1 p-[2px]">
           {smallNavbar.map((item) => (
-            <li
+            <Link
               key={item.name}
-              className="text-gray-300 hover:text-gray-50 list-none font-medium text-sm "
+              to={item.href}
+              className="text-gray-300 hover:text-gray-50 Linkst-none font-medium sm:text-sm text-[12px]"
             >
               {item.name}
-            </li>
+            </Link>
           ))}
           <div className="flex">
             <img src="/asset/images/id.png" alt="id" />
@@ -42,7 +44,7 @@ const headNavbar = () => {
           </div>
         </div>
 
-        <form className=" mr-10">
+        <form className=" mr-10 hidden sm:block">
           <label
             for="default-search"
             class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -83,7 +85,7 @@ const headNavbar = () => {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 
