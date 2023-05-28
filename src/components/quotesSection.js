@@ -45,21 +45,21 @@ const QuoteSection = ({
           }`}
         />
         <blockquote
-          className={`text-lg px-4 md:text-4xl text-center max-w-4xl ${
+          className={`text-lg px-4 md:text-4xl text-center max-w-4xl  font-light ${
             isBlurred ? "opacity-100" : "opacity-0"
           }`}
         >
           {"“" + quote + "”"}
         </blockquote>
         <p
-          className={`text-center text-xl md:text-2xl ${
+          className={`text-center text-xl md:text-2xl font-bold mt-8  ${
             isBlurred ? "opacity-100" : "opacity-0"
           }`}
         >
           {person}
         </p>
         <p
-          className={`text-center text-xl md:text-2xl ${
+          className={`text-center text-xl md:text-2xl font-extralight italic   ${
             isBlurred ? "opacity-100" : "opacity-0"
           }`}
         >

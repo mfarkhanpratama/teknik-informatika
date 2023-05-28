@@ -44,15 +44,11 @@ const navigation = [
     ],
   },
   {
-    name: "Kemahasiswaan",
-    href: "/kemahasiswaan",
+    name: "Berita",
+    href: "/berita",
     current: false,
   },
-  {
-    name: "Layanan",
-    href: "/layanan",
-    current: false,
-  },
+
   {
     name: "Kontak",
     href: "/kontak",

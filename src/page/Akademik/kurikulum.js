@@ -6,13 +6,8 @@ function Kurikulum() {
     <div>
       <SubLatar judul={"Kurikulum"} />
 
-      <section className=" w-[1600px] flex justify-center items-center my-[100px]">
-        <iframe
-          title="jadwal-kuliah"
-          src="/asset/pdf/kurikulum.pdf"
-          width="1200"
-          height="1200"
-        ></iframe>
+      <section className=" w-2/3 mx-auto my-10">
+        <img src="/asset/images/kurikulum.jpg" alt="" />
       </section>
     </div>
   );

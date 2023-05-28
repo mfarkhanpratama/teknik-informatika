@@ -1,18 +1,24 @@
 import React from "react";
 import SubLatar from "../../components/sublatar";
 
+const kalender = [
+  "/asset/images/kalender/k1.jpg",
+  "/asset/images/kalender/k2.jpg",
+  "/asset/images/kalender/k3.jpg",
+  "/asset/images/kalender/k4.jpg",
+  "/asset/images/kalender/k5.jpg",
+  "/asset/images/kalender/k6.jpg",
+];
+
 function KalenderAkademik() {
   return (
     <div>
       <SubLatar judul={"Kalender Akademik"} />
 
-      <section className=" w-[1600px] flex justify-center items-center my-[100px]">
-        <iframe
-          title="jadwal-kuliah"
-          src="/asset/pdf/kalender.pdf"
-          width="1200"
-          height="1200"
-        ></iframe>
+      <section className=" w-2/3 mx-auto my-10">
+        {kalender.map((item) => (
+          <img src={item} alt="" />
+        ))}
       </section>
     </div>
   );
