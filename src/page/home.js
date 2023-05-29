@@ -84,11 +84,10 @@ function Home() {
             Riau
           </h1>
           <p class="md:text-[30px] text-[15px] font-normal">
-            Stanford was founded almost 150 years ago on a bedrock of societal
-            purpose. Our mission is to contribute to the world by educating
-            students for lives of leadership and purposeful contribution;
-            advancing fundamental knowledge and cultivating creativity; and
-            accelerating solutions and amplifying their impact.
+            Menghasilkan lulusan berkualitas dengan kemampuan mengaplikasikan
+            ilmu dasar, matematika, komputer dan informasi teknologi untuk
+            menyelesaikan persoalan-persoalan teknis teknologi informasi dan
+            pengelolaannya.
           </p>
           <button class="px-4 py-2 bg-slate-800 text-white text-[20px]">
             MORE ABOUT TI UNRI
@@ -98,16 +97,14 @@ function Home() {
       <section class="h-auto flex items-center justify-center md:py-36  py-12 bg-slate-700">
         <div class=" w-2/3 mx-auto text-center space-y-12">
           <h1 class="md:text-[40px]  text-[20px] font-bold text-white">
-            Our interdisciplinary curriculum offers a rare combination of degree
-            programs in
+            Our interdisciplinary curriculum offers a rare combination of
+            concentration
           </h1>
           <p class="md:text-[30px] text-[15px] font-normal text-white">
-            LIBERAL ARTS AND ENGINEERING
+            COMPUTER ENGGINERING
           </p>
           <hr class="h-[2px] mx-auto  bg-gray-100 border-0 rounded md:my-10 " />
-          <p className="text-white">
-            Build your future with 51 majors and 41 minors.
-          </p>
+          <p className="text-white">Build your future with 3 minors.</p>
           <div
             className="flex justify-center md:gap-9 gap-3
            items-center"
@@ -136,10 +133,10 @@ function Home() {
       </section>
 
       <section className="h-auto py-6 flex items-start justify-center bg-white gap-2 md:gap-4 my-6 md:my-24">
-        <CardCount target={40} context="Mahasiswa Aktif" />
-        <CardCount target={40} context="Dosen Pengampu" />
-        <CardCount target={40} context="Alumni" />
-        <CardCount target={40} context="Mata Kuliah" />
+        <CardCount target={400} context="Mahasiswa Aktif" />
+        <CardCount target={12} context="Dosen Pengampu" />
+        <CardCount target={800} context="Alumni" />
+        <CardCount target={30} context="Mata Kuliah" />
       </section>
 
       <section>
@@ -152,7 +149,7 @@ function Home() {
         />
       </section>
 
-      <section className="h-auto md:flex md:items-center md:justify-center grid grid-cols-4 gap-2 py-11 md:py-28 bg-white">
+      <section className="w-screen h-auto 2xl:flex 2xl:items-center 2xl:justify-center grid grid-cols-4 gap-2 py-11 md:py-28 bg-white">
         {images.map((item) => (
           <img src={item} alt={item} className="md:h-28 h-8" />
         ))}
