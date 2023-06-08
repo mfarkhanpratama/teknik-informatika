@@ -20,6 +20,9 @@ import KalenderAkademik from "./page/Akademik/kalenderAkademik";
 import Akreditasi from "./page/Profil/Akreditasi";
 import Kontak from "./page/kontak";
 import Berita from "./page/berita";
+import Mikrotik from "./page/Galeri/mikrotik";
+import Poster from "./page/kategori/poster";
+import Tendik from "./page/Profil/tendik";
 
 function App() {
   return (
@@ -38,6 +41,7 @@ function App() {
           <Route path="/profil/people" element={<People />} />
           <Route path="/profil/Tujuan" element={<Tujuan />} />
           <Route path="/profil/Akreditasi" element={<Akreditasi />} />
+          <Route path="/profil/tendik" element={<Tendik />} />
 
           {/* AKADEMIK PAGE */}
           <Route path="/akademik/Kurikulum" element={<Kurikulum />} />
@@ -51,6 +55,11 @@ function App() {
           <Route path="/galeri/foto" element={<Foto />} />
           <Route path="/galeri/video" element={<Video />} />
           <Route path="/galeri/virtual-tour" element={<VirtualTour />} />
+          <Route path="/galeri/poster" element={<Mikrotik />} />
+
+          {/* KATEGORI PAGE */}
+          <Route path="/kategori/berita" element={<Berita />} />
+          <Route path="/kategori/poster" element={<Poster />} />
 
           {/* KONTAK PAGE */}
           <Route path="/Kontak" element={<Kontak />} />

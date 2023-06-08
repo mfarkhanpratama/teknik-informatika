@@ -20,7 +20,8 @@ const navigation = [
       { linkName: "Sasaran", href: "/profil/Sasaran" },
       { linkName: "Strategi", href: "/profil/Strategi" },
       { linkName: "Akreditasi", href: "/profil/Akreditasi" },
-      { linkName: "People", href: "/profil/people" },
+      { linkName: "dosen", href: "/profil/people" },
+      { linkName: "Tenaga Pendidik", href: "/profil/tendik" },
     ],
   },
   {
@@ -41,12 +42,17 @@ const navigation = [
       { linkName: "Foto", href: "/galeri/foto" },
       { linkName: "Video", href: "/galeri/video" },
       { linkName: "Virtual Tour", href: "/galeri/virtual-tour" },
+      { linkName: "Mikrotik", href: "/galeri/mikrotik" },
     ],
   },
   {
-    name: "Berita",
+    name: "kategori",
     href: "/berita",
     current: false,
+    list: [
+      { linkName: "berita", href: "/kategori/berita" },
+      { linkName: "poster", href: "/kategori/poster" },
+    ],
   },
 
   {

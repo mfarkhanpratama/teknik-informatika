@@ -137,7 +137,7 @@ const peopleData = [
 function People() {
   return (
     <div>
-      <SubLatar judul={"People"} />
+      <SubLatar judul={"Dosen"} />
       <section className=" flex items-center justify-center h-auto my-9">
         <div className="grid md:grid-cols-4 grid-cols-1 md:gap-4">
           {peopleData.map((person, index) => (

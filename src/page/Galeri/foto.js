@@ -35,22 +35,19 @@ const images = [
     url: "/asset/images/photo/8.jpg",
     title: "test",
   },
-  {
-    url: "/asset/images/photo/9.jpg",
-    title: "test",
-  },
 ];
 
 function Foto() {
   return (
-    <div>
+    <div className="flex-col flex items-center">
       <SubLatar judul={"Foto"} />
-
-      <div className="grid grid-cols-4 gap-4">
-        {images.map((item) => (
-          <PhotoComponent image={item.url} title={item.title} />
-        ))}
-      </div>
+      <section className="max-w-[1300px] md:my-16 my-4">
+        <div className="grid grid-cols-4 gap-4">
+          {images.map((item) => (
+            <PhotoComponent image={item.url} title={item.title} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
